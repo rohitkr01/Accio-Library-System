@@ -1,0 +1,143 @@
+:root{
+    --background-milky: white;
+    --text-color: white;
+    --navigation-bg: black;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+/* Navigation bar styling */
+
+.Navigation{
+    background: var(--navigation-bg);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    align-items: center;
+    align-content: center;
+    
+    position: sticky;
+    top: 0;
+}
+.logo{
+    position: relative;
+    left: 30px;
+}
+
+.nav-links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    list-style: none;
+    padding-right: 30px;
+}
+
+.nav-links ul li:hover{
+    scale: 1.09;
+}
+
+.logo a, .nav-links a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo a:hover, .nav-links a:hover{
+    color: blueviolet;
+}
+
+/* Container section */
+.container{
+    background: rgb(245, 238, 238);
+    /* border: 1px solid blue; */
+    /* height: auto; */
+    width: 100%;
+    padding: 30px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.books, .registration{
+  background: var(--background-milky);
+ 
+  position: static;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  border-radius: 10px;
+}
+
+/* --------------------------------------------- */
+/* Books section styling */
+.books-content{
+    padding: 0 40px;
+    padding-bottom: 30px;
+}
+.books-content table{
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+
+.books-content table th{
+    text-align: left;
+}
+.books-content table th,.books-content table td{
+    padding-left: 8px;
+}
+
+.inner-table{
+    margin-bottom: 15px;
+}
+.inner-table td{
+    padding: 10px 0;
+
+}
+
+
+
+
+/* ------------------------------------------- */
+/* Registration form styling */
+
+.registration{
+    padding-bottom: 40px;
+}
+
+.reg-content{
+    padding: 0 40px;
+}
+
+.registration input{
+    width: 100%;
+    height: 30px;
+    border:0.5px solid gray;
+    border-radius: 2px;
+    outline: none;
+
+    display: block;
+}
+
+#register_btn{
+    width: 101%;
+    height: 30px;
+    background: black;
+    color: var(--text-color);
+    font-size: 18px;
+    border: none;
+    text-align: center;
+} 
